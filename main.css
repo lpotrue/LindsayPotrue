@@ -7,6 +7,7 @@ body, html {
     text-align: center;
   }
 
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Lato", sans-serif;
     font-family: 'Raleway', sans-serif, thin;
@@ -26,6 +27,10 @@ h3 {
     h3 {font-size: 3vh;
 }
 }
+@media only screen and (max-width: 1000px) {
+    h3 {font-size: 1.5em;
+}
+}
 
 h4{
   font-size: 28px;
@@ -42,6 +47,10 @@ h4{
 }
 @media only screen and (max-width: 600px) {
     h4 {font-size: 3vh;
+  }
+}
+@media only screen and (max-width: 1000px) {
+    h4 {font-size: 1.5em;
   }
 }
 
@@ -97,8 +106,8 @@ p {
 }
 @media only screen and (max-width: 600px) {
   #phone{width: 50px;
-            height: 100px;
-            border-radius: 5px;}
+          height: 100px;
+          border-radius: 5px;}
 }
 
 #desktop {
@@ -191,7 +200,6 @@ p {
 
 a{
   text-decoration: none;
-  color: white;
 }
 
 #content{
@@ -202,7 +210,6 @@ a{
   text-align: center;
   height: 40px;
   width: 160px;
-  
   cursor: pointer
   border-radius: 2px;
   color: black;
@@ -246,13 +253,17 @@ a{
   
   transition: all .05s linear;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .btnn, .btnnn { width: 120px;
                   height: 35px;
                   font-size: 10px;
                   color: white;
                   margin-left: 0;
                   margin: auto;}
+}
+
+.btnn{
+  margin-bottom: 5%;
 }
 
 .btnnn {
@@ -303,44 +314,98 @@ a{
 
 }
 
-.linked {
-  width: 70px;
-  height: 70px;
+.gitin{
+  position: relative;
+  display: inline-flex;
 }
-@media only screen and (max-width: 600px) {
-  .linked { width: 55px;
-            height: 55px;
-        }
+
+#letter{
+  font-family: 'PT Sans Caption', sans-serif;
+  z-index: 3;
+  color: white;
+  position: relative;
+  font-size: 30px;
+  line-height: normal;
+}
+
+.linked {
+  margin-left: 15px;
+  margin-top: 2px;
+  box-sizing: border-box;
+  background-color: #007bb6;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  border-radius: 2px;
+  font-weight: bolder;
+  box-shadow: 4px 4px 4px #999;
+}
+
+.box {
+  padding-left: 15px;
+  box-sizing: border-box;
+  background-color: black;
+  width: 70px;
+  border: none;
+  display: inline-block;
+  z-index: 1;
+  border-radius: 2px;
+  font-weight: bolder;
 }
 
 #git{
-  margin: 2%;
   width: 50px;
   height: 50px;
 }
 
-.tooltip {
+.tooltip{
+    margin: 2%;
     position: relative;
     display: inline-block;
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: white;
-    color: black;
+    font-style: italic;
+    width: 110px;
+    background-color: white ;
+    color: #e1c488;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
     position: absolute;
     z-index: 1;
     bottom: 100%;
-    left: 50%;
+    left: 60%; 
     margin-left: -60px;
 }
 
+.tooltiptext2, .tooltiptext2 {
+   background-color: black;
+   visibility: hidden;
+   font-style: italic;
+   width: 110px;
+   color: #e1c488;
+   text-align: center;
+   border-radius: 6px;
+   position: absolute;
+   z-index: 1;
+   bottom: 100%;
+   left: 60%; 
+   margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+}
+
 .foot{
-  padding: 3%;
   font-size: initial;
   margin: auto;
 }
@@ -353,6 +418,17 @@ a{
 @media only screen and (max-width: 600px) {
   #aws{ width: 70px;
         height: 70px;
+        }
+}
+
+#redux{
+   width: 100px;
+   height: 50px; 
+   margin: 2%;
+}
+@media only screen and (max-width: 600px) {
+  #aws{ width: 70px;
+        height: 50px;
         }
 }
 
@@ -391,6 +467,10 @@ a{
   align-items: center;
   margin: auto;
   margin-bottom: 5%;
+}
+@media only screen and (max-width: 320px) {
+  .click{ display: block;
+}
 }
 
 
