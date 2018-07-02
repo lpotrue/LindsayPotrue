@@ -9,9 +9,10 @@ body, html {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Lato", sans-serif;
-    font-family: 'Raleway', sans-serif, thin;
-    font-weight: bold;
+    //font-family: "Lato", sans-serif;
+    //font-family: 'Raleway', sans-serif, thin;
+    font-family: Verdana, Geneva, sans-serif;
+    //font-weight: bold;
 }
 h3 {
   font-size: 1.5em;
@@ -22,7 +23,8 @@ h3 {
   border-top: 1px solid #e1c488;
   margin-right: 10%;
   margin-left: 10%;
-  font-family: 'Raleway', sans-serif, normal;
+  font-weight: bold;
+  //font-family: 'Raleway', sans-serif, bold;
 }
 @media only screen and (min-width: 1000px) {
     h3 {font-size: 1.75em;
@@ -40,7 +42,8 @@ h4{
   border-top: 1px solid #e1c488;
   margin-right: 10%;
   margin-left: 10%;
-  font-family: 'Raleway', sans-serif, normal;
+  font-weight: bold;
+  //font-family: 'Raleway', sans-serif, bold;
 }
 @media only screen and (max-width: 500px) {
     h4 {font-size: 1.25em;
