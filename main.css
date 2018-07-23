@@ -9,13 +9,10 @@ body, html {
 
 
 h1, h2, h3, h4, h5, h6 {
-    //font-family: "Lato", sans-serif;
-    //font-family: 'Raleway', sans-serif, thin;
-    font-family: Verdana, Geneva, sans-serif;
-    //font-weight: bold;
+    font-family: Verdana, sans-serif;  
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #e1c488;
   text-align: center;
   color: #e1c488;
@@ -24,7 +21,7 @@ h3 {
   margin-right: 10%;
   margin-left: 10%;
   font-weight: bold;
-  //font-family: 'Raleway', sans-serif, bold;
+  font-family: 'Raleway', sans-serif;
 }
 @media only screen and (min-width: 1000px) {
     h3 {font-size: 1.75em;
@@ -32,7 +29,7 @@ h3 {
 }
 
 h4{
-  font-size: 1.5em;
+  font-size: 2em;
   letter-spacing: 3px;
   color: #e1c488;
   text-align: center;
@@ -43,10 +40,10 @@ h4{
   margin-right: 10%;
   margin-left: 10%;
   font-weight: bold;
-  //font-family: 'Raleway', sans-serif, bold;
+  font-family: 'Raleway', sans-serif, bold;
 }
 @media only screen and (max-width: 500px) {
-    h4 {font-size: 1.25em;
+    h4 {font-size: 1.5em;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -61,32 +58,152 @@ h5{
   font-size: 18px;
 }
 @media only screen and (max-width: 600px) {
-  h5{text-align: left;
-     margin-left: 12%;}
+  h5{
+     margin-left: 5%;
+     margin-right: 5%;}
+}
+@media only screen and (min-width: 1000px) {
+    h5 {margin-left: 15%;
+        margin-right: 15%;;
+  }
+}
+
+
+header {
+    height: 360px;
+    z-index: 10;
+}
+.header-banner {
+    background-color: #333;
+    position: absolute;
+}
+
+header h1 {
+    background-color: rgba(18,72,120, 0.8);
+    color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 2rem; 
+    left: 2rem;
+}
+
+.fixed-header {
+    padding-top: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #292f36;
+    position: fixed;
+    z-index: 10;
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    visibility: hidden;
+}
+.visible-title {
+    visibility: visible;
+}
+
+#initiallyHidden{
+ display: none; 
+}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: center;
+    max-width: 100%;
+}
+nav ul li { 
+    display: inline-block; 
+    margin-left: 10px;
+}
+nav ul li a {
+    text-decoration: none; 
+    color: #a9abae;
 }
 
 .Pro{
-  text-align: center;
-   padding-top: 3%;
+   margin-bottom: 5%;
+   margin-left: 5%;
+   text-align: left;
    width: 333px; 
-   height: 450px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 667px) {
   .Pro{ width: 300px;
-        height: 400px;
+        margin: 0;
+        margin-left: 3%;  
         }
+}
+@media only screen and (min-width: 930px){
+  .Pro{ margin-left: 10%;
+  }
+}
+@media only screen and (min-width: 1110px){
+  .Pro{ margin-left: 15%;
+  }
 }
 
 #pro-1, #pro-2, #pro-3{
     align-items: middle;
 }
 
+#pro-1{
+  position: relative;
+  margin-top: 200px;
+}
+@media only screen and (max-width: 667px) {
+  #pro-1{margin-top: 400px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #pro-1{
+    margin-top: 500px;
+  }
+}
 
 p {
-  display: block;
-  width: 100%;
-  color: black;
+  line-height: 2;
+  margin-right: 5%;
+  float: right;
+  color: silver;
+  width: 40%;
+  padding-bottom: 5%;
 }
+@media only screen and (max-width: 667px) {
+  p{ text-align: center;
+     padding-top: 3%;
+     width: 80%;
+     margin-bottom: 0;
+     margin-left: 5%;
+     margin-right: 5%;
+     display: contents;
+     padding-bottom: 5%;
+ }
+}
+@media only screen and (min-width: 930px){
+  p{ margin-right: 10%;
+  }
+}
+@media only screen and (min-width: 1110px){
+  p{ margin-right: 15%;
+     padding-left: 2%;
+  }
+}
+
 
 #port{
     text-align: center;
@@ -479,13 +596,16 @@ a{
 }
 
 #express{
+  font-size: 2em;
+  font-family: 'Raleway', sans-serif, bold;
   margin: 2%;
-  width: 100px;
+  width: 100%;
   height: 40px;
 }
 @media only screen and (max-width: 700px) {
   #express{ width: 70px;
-            height: 30px;}
+            height: 30px;
+            font-size: 1.5em;}
 }
 
 .icons{
@@ -513,7 +633,9 @@ a{
 .my-footer{
   width: 100%;
   height: 20%;
-  background-color: black;
+  background-color: linear-gradient(to bottom, #383b56 0%, #70625d); 
+
+  //background-color: black;
   margin: auto;
   display: block;
   text-align: center;
