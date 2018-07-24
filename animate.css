@@ -95,7 +95,6 @@ header span::after {
 }
 
 .dropdown-toggle {
-  //color: white;
   color: #e1c488;
 }
 
@@ -197,7 +196,7 @@ footer {
   text-align: center;
   padding: 15px;
   font-size: 1.5em;
-  background-image: linear-gradient(to bottom, #383b56 0%, #70625d); 
+  background-color: #333333;
 }
 
 nav {
