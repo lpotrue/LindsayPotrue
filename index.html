@@ -14,17 +14,23 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="particles.css">
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="index.js"></script>
   </head>
     
    <div id="home">
+   <div id="particles-js">
+    <div class="count-particles">
+      <span class="js-count-particles"></span>
+    </div>
       <div class="w3-display-middle" style="white-space:nowrap;">
          <div class="w3-center w3-wide w3-animate-opacity" style="color:white">Lindsay Potrue </div>
         <div class="w3-center w3-wide w3-animate-opacity" style="color:white"> Ambitious Full-Stack Developer.</div>
           <div class="w3-center  w3-wide w3-animate-opacity" style="color:white"> JavaScript + Express + React + Node</div>
         </div>
        </div> 
+     
      </div>
   <header>
     
@@ -46,105 +52,15 @@
           <li class="clear"><a href="#clear" style="padding-right: 30px;">Summary</a></li>
           <li class="contact"><a href="#contact" style="padding-right: 30px;">Contact</a></li>
           <li class="toggle"><span>▼</span>Projects</li><br>
-              <li class="hide" id="initiallyHidden"><a href="#pro-1" style="display: inline;color: #e1c488;padding-right: 10px;">PetMatch</a></li>
+              <li class="hide" id="initiallyHidden"><a href="#pro-3" style="display: inline;color: #e1c488;padding-right: 10px;">PetMatch</a></li>
               <li class="hide" id="initiallyHidden"><a href="#pro-2" style="display: inline;color: #e1c488;padding-right: 10px;" id="initiallyHidden">Horse Express</a></li>
-              <li class="hide" id="initiallyHidden"><a href="#pro-3" style="display: inline;color: #e1c488;padding-right: 10px;">Just Hodl</a></li>
+              <li class="hide" id="initiallyHidden"><a href="#pro-1" style="display: inline;color: #e1c488;padding-right: 10px;">Just Hodl</a></li>
         </ul>
     </nav>
   </header>
   <br>
  <body>  
-    <section id="pro-1">
-     <br>
-     <h3>PetMatch</h3>
-            <h5>Every year in the United States, an estimated 6 to 8 million lost, abandoned, or unwanted dogs and cats enter animal shelters.  PetMatch uses google maps and the petfinder API to locate nearby shelters and find adoptable animals in your area.  PetMatch uses semantic HTML5, responsive design, CSS3, as well as JavaScript and JQuery.  </h5>
-    
-    <div class="icons">
-         <div class="tooltip">
-          <img id="icon" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png" at="JavaScript icon"/><span class="tooltiptext">JavaScript</span></div>
-          <div class="tooltip">
-          <img id="icon" src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" alt="HTML icon"/><span class="tooltiptext">HTML</span></div>
-          <div class="tooltip">
-          <img id="icon" src="http://htmldoctor.info/images/css3.png" alt="CSS icon"/><span class="tooltiptext">CSS</span></div>
-          <div class="tooltip">
-          <img id="icon" src="http://www.sinus-arts.de/wp-content/uploads/2015/02/jQurery.gif" alt="jQuery icon"/><span class="tooltiptext">jQuery</span></div>
-      </div>
-
-      <section class="demo">
-        <div id="together">
-          
-          <div data-position="right" class="viewed animBlock">
-          <img id="ipad" src="https://image.ibb.co/cNSwM6/ipad_PM.jpg" alt="Responsive Design ipad"/></div>
-       
-          <div data-position="left" class="viewed animBlock">
-          <img id="phone" src="https://image.ibb.co/hHZMom/iphone_PM.jpg" alt="Responsive Design iphone"/></div>
-        </div>
-      
-          <div data-position="bottom" class="notViewed animBlock">
-          <img id="desktop" src="https://image.ibb.co/n7wRom/desktop_PM.jpg" alt="Responsive Design Desktop"/></div> 
-       
-      </section>
-     
-        <div class="click">
-          <button class="btnn">
-            <a href="https://github.com/lpotrue/PetMatch" target="_blank"><i class="fa fa-github"></i>   VIEW CODE</a>
-        </button>
-        <button class="btnn">
-            <a href="https://lpotrue.github.io/PetMatch/" target="_blank">VIEW APP</a>
-        </button>
-      </div>
-    </section>
-        
-      
-      <section id="pro-2">
-      <br>
-      <h3>Horse Express</h3>
-         
-           <h5>Horse Express was designed with the idea of tracking the exercise schedule for horses in training.  The convenience of taking notes is right at your fingertips.  Rate the progress of your training and keep an up to date schedule with Horse Express.  The app features file uploads through Amazon Web Services to allow the user to upload a profile photo of their horse/ horses.  Users are also able to signup and create a profile for each of their horses, all under one account.  Connect with fellow equestrians to view the progress and comments about other horses. This App uses MongoDB to keep track of user horses, track records of horses. </h5>
-        </div>
-       <div class="icons">
-           <div class="tooltip">
-           <img id="icon" src="https://static.thinkster.io/topics/node_icon.png" alt="NodeJS icon"/><span class="tooltiptext">NodeJS</span></div>
-           <div class="tooltip">
-           <img id="icon" src="https://img.icons8.com/color/100/000000/mongodb.png" alt="MongoDB icon"/><a href="https://icons8.com/icon/74402/mongodb" target="_blank"><span class="tooltiptext">MongDB</span></a></div>
-          <div class="tooltip">
-           <span id="express"><span id="letters">e</span><span id="letters">x</span><span id="letters">p</span><span id="letters">r</span><span id="letters">e</span><span id="letters">s</span><span id="letters">s</span><span class="tooltiptext">express</span></div>
-           <div class="tooltip">
-           <img id="icon" src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" alt="HTML icon"/><span class="tooltiptext">HTML</span></div>
-           <div class="tooltip">
-           <img id="icon" src="http://htmldoctor.info/images/css3.png" alt="CSS icon"/><span class="tooltiptext">CSS</span></div>
-            <div class="tooltip">
-           <img id="icon" src="http://www.sinus-arts.de/wp-content/uploads/2015/02/jQurery.gif" alt="jQuery icon"/><span class="tooltiptext">jQuery</span></div>
-           <div class="tooltip1">
-           <img id="aws" src="https://pbs.twimg.com/profile_images/907648699718922241/_XyenLcK.jpg" alt="AWS icon"/><span class="tooltiptext1">Amazon Web Services</span></div>
-         </div>
-
-
-       <section class="demo">
-        <div id="together">
-           <div data-position="right" class="viewed animBlock">
-           <img id="ipad" src="https://image.ibb.co/nh0mom/ipad_HE.jpg" alt="Responsive Design ipad"/></div>
-          
-         
-              <div data-position="left" class="viewed animBlock">
-              <img id="phone" src="https://image.ibb.co/dogM3m/phone_HE.jpg" alt="Responsive Design iphone"/></div>
-         </div>
-           <div data-position="bottom" class="notViewed animBlock">
-           <img id="desktop" src="https://image.ibb.co/kN4wom/desktop_HE.jpg" alt="Responsive Design Desktop"/></div>
-     </section>
-       <div class="click">
-          <button class="btnn">
-            <a href="https://github.com/lpotrue/Horse-express" target="_blank"><i class="fa fa-github"></i>  VIEW CODE</a>
-          </button>
-          <button class="btnn">
-              <a href="https://horse-express.herokuapp.com" target="_blank">VIEW APP</a>
-          </button>
-      </div>
-      </div>
-      </div>
-    </section>
-
-      <section id="pro-3">
+   <section id="pro-1">
       <br>
         <h3>Just Hodl</h3>
            <h5>As the Cryptocurrency gurus say "Hodl" meaning: holding onto cryptocurrency. Just Hodl is a React-Redux application that allows the user to "hold on to" or track the progress of their chosen Cryptocurrencies. With the help of Mlab and Recharts, the App features an areagraph to track the histotic progress of currencies. Users also have the option to save  a chosen number of coins and view the "net-worth" as the coin prices fluctuate. A full-stack application that uses the CoinMarketCap API.</h5>
@@ -192,8 +108,95 @@
           </div>
         </div>
       </div>
-   </section>
+    </section>
+    <section id="pro-2">
+      <br>
+      <h3>Horse Express</h3>
+         
+           <h5>Horse Express was designed with the idea of tracking the exercise schedule for horses in training.  The convenience of taking notes is right at your fingertips.  Rate the progress of your training and keep an up to date schedule with Horse Express.  The app features file uploads through Amazon Web Services to allow the user to upload a profile photo of their horse/ horses.  Users are also able to signup and create a profile for each of their horses, all under one account.  Connect with fellow equestrians to view the progress and comments about other horses. This App uses MongoDB to keep track of user horses, track records of horses. </h5>
+        </div>
+       <div class="icons">
+           <div class="tooltip">
+           <img id="icon" src="https://static.thinkster.io/topics/node_icon.png" alt="NodeJS icon"/><span class="tooltiptext">NodeJS</span></div>
+           <div class="tooltip">
+           <img id="icon" src="https://img.icons8.com/color/100/000000/mongodb.png" alt="MongoDB icon"/><a href="https://icons8.com/icon/74402/mongodb" target="_blank"><span class="tooltiptext">MongDB</span></a></div>
+          <div class="tooltip">
+           <span id="express"><span id="letters">e</span><span id="letters">x</span><span id="letters">p</span><span id="letters">r</span><span id="letters">e</span><span id="letters">s</span><span id="letters">s</span><span class="tooltiptext">express</span></div>
+           <div class="tooltip">
+           <img id="icon" src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" alt="HTML icon"/><span class="tooltiptext">HTML</span></div>
+           <div class="tooltip">
+           <img id="icon" src="http://htmldoctor.info/images/css3.png" alt="CSS icon"/><span class="tooltiptext">CSS</span></div>
+            <div class="tooltip">
+           <img id="icon" src="http://www.sinus-arts.de/wp-content/uploads/2015/02/jQurery.gif" alt="jQuery icon"/><span class="tooltiptext">jQuery</span></div>
+           <div class="tooltip1">
+           <img id="aws" src="https://pbs.twimg.com/profile_images/907648699718922241/_XyenLcK.jpg" alt="AWS icon"/><span class="tooltiptext1">Amazon Web Services</span></div>
+         </div>
 
+
+       <section class="demo">
+        <div id="together">
+           <div data-position="right" class="viewed animBlock">
+           <img id="ipad" src="https://image.ibb.co/nh0mom/ipad_HE.jpg" alt="Responsive Design ipad"/></div>
+          
+         
+              <div data-position="left" class="viewed animBlock">
+              <img id="phone" src="https://image.ibb.co/dogM3m/phone_HE.jpg" alt="Responsive Design iphone"/></div>
+         </div>
+           <div data-position="bottom" class="notViewed animBlock">
+           <img id="desktop" src="https://image.ibb.co/kN4wom/desktop_HE.jpg" alt="Responsive Design Desktop"/></div>
+     </section>
+       <div class="click">
+          <button class="btnn">
+            <a href="https://github.com/lpotrue/Horse-express" target="_blank"><i class="fa fa-github"></i>  VIEW CODE</a>
+          </button>
+          <button class="btnn">
+              <a href="https://horse-express.herokuapp.com" target="_blank">VIEW APP</a>
+          </button>
+      </div>
+      </div>
+      </div>
+    </section>
+     <section id="pro-3">
+     <br>
+     <h3>PetMatch</h3>
+            <h5>Every year in the United States, an estimated 6 to 8 million lost, abandoned, or unwanted dogs and cats enter animal shelters.  PetMatch uses google maps and the petfinder API to locate nearby shelters and find adoptable animals in your area.  PetMatch uses semantic HTML5, responsive design, CSS3, as well as JavaScript and JQuery.  </h5>
+    
+    <div class="icons">
+         <div class="tooltip">
+          <img id="icon" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png" at="JavaScript icon"/><span class="tooltiptext">JavaScript</span></div>
+          <div class="tooltip">
+          <img id="icon" src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" alt="HTML icon"/><span class="tooltiptext">HTML</span></div>
+          <div class="tooltip">
+          <img id="icon" src="http://htmldoctor.info/images/css3.png" alt="CSS icon"/><span class="tooltiptext">CSS</span></div>
+          <div class="tooltip">
+          <img id="icon" src="http://www.sinus-arts.de/wp-content/uploads/2015/02/jQurery.gif" alt="jQuery icon"/><span class="tooltiptext">jQuery</span></div>
+      </div>
+
+      <section class="demo">
+        <div id="together">
+          
+          <div data-position="right" class="viewed animBlock">
+          <img id="ipad" src="https://image.ibb.co/cNSwM6/ipad_PM.jpg" alt="Responsive Design ipad"/></div>
+       
+          <div data-position="left" class="viewed animBlock">
+          <img id="phone" src="https://image.ibb.co/hHZMom/iphone_PM.jpg" alt="Responsive Design iphone"/></div>
+        </div>
+      
+          <div data-position="bottom" class="notViewed animBlock">
+          <img id="desktop" src="https://image.ibb.co/n7wRom/desktop_PM.jpg" alt="Responsive Design Desktop"/></div> 
+       
+      </section>
+     
+        <div class="click">
+          <button class="btnn">
+            <a href="https://github.com/lpotrue/PetMatch" target="_blank"><i class="fa fa-github"></i>   VIEW CODE</a>
+        </button>
+        <button class="btnn">
+            <a href="https://lpotrue.github.io/PetMatch/" target="_blank">VIEW APP</a>
+        </button>
+      </div>
+    </section>
+      
     <section id="contact">
       <h3>CONTACT ME</h3>
      
@@ -228,7 +231,10 @@
   
   
   </footer>
+ <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+ <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <script src="particles.js"></script>
  <script src="index.js"></script>
 </body>
 </html>
