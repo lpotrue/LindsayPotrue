@@ -259,7 +259,6 @@ p {
     align-items: center;
     text-align: center;
     margin: auto; 
-    display: block;
     border-radius: 25px;
     height: 400px;
     width: 300px;
